@@ -10,8 +10,9 @@ const countriesReducer = (state = initialState, action) => {
     case GET_COUNTRIES: {
       return Object.assign({}, state, { countries: state.countries });
     }
+  	default:
+	  return state;
   }
-  return state;
 };
 
 export default countriesReducer;
