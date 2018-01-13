@@ -1,20 +1,17 @@
-import {
-	GET_COUNTRIES
-} from '../actions/actions-countries';
-
-import countriesData from '../data/countries.json';
+import { GET_COUNTRIES } from "../actions/actions-countries";
+import countriesData from "../data/countries.json";
 
 const initialState = {
-	countries: countriesData
+  countries: countriesData
 };
 
 const countriesReducer = (state = initialState, action) => {
-	switch (action.type) {
-		case GET_COUNTRIES: {
-			return Object.assign({}, state, { countries: state.countries });
-		}
-	}
-	return state;
-}
+  switch (action.type) {
+    case GET_COUNTRIES: {
+      return Object.assign({}, state, { countries: state.countries });
+    }
+  }
+  return state;
+};
 
 export default countriesReducer;
