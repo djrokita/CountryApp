@@ -6,11 +6,12 @@ const CountryFlagList = props => (
 	<div className='countries-list'>
 		{props.countries.map(item => {
 			return (
-				<div className='single-country' key={country.id}>
-					<Link className='logo' to={'countries/country/' + country.id}>
+				<div className='single-country' key={item.id}>
+					<Link className='logo' to={'countries/country/' + item.id}>
 						<CountryFlag country={item} />
 					</Link>
-				<div>
+					<button onClick={this.props.deleteCountry.bind(null, item.id)}>DELETE</button>
+				</div>
 			)
 		})}
 	</div>
