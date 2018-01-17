@@ -13,7 +13,7 @@ const Navigation = (props) => (
           </Link>
         </div>
         <div className="collapse navbar-collapse">
-          <ul>
+          <ul className='nav navbar-nav'>
             <li>
               <Link to="/countries">Countries</Link>
             </li>

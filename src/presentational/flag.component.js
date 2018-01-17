@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CountryFlag = props => (
-	<div>
-		<img className='county-logo' scr={props.country.imageUrl} alt='coutry photo'/>
+	<div className='country-logo-wrapper'>
+		<img className='county-logo' src={props.country.imageUrl} alt='coutry photo'/>
 	</div>
 );
 
